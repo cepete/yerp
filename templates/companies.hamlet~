@@ -1,0 +1,21 @@
+<div id="page"> 
+     <header>
+        <nav>		
+                        <li><a href="" class="det">Details
+                        <li><a href="" class="Hed">Header/Footer
+
+<div id="content">
+     <article>
+        <h1> Companies
+        $if null companies
+            -- Show a standard message if there is no group
+            <p> There are no companies in the Companies Table
+        $else
+            -- Show the list of articles
+            <ul> 
+                 $forall Entity companyId company <- companies
+                         <li>
+                                <a href=@{CompanyR companyId}> #{companyName company}
+
+
+

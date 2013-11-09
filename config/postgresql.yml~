@@ -1,0 +1,24 @@
+Default: &defaults
+  user: yerp
+  password: yerp
+  host: localhost
+  port: 5432
+  database: yerp
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: yerp_test
+  <<: *defaults
+
+Staging:
+  database: yerp_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: yerp_production
+  poolsize: 100
+  <<: *defaults

@@ -1,0 +1,6 @@
+    margin: 1em;
+    width: 45em;
+    margin: 1em auto;
+    background: #F2F2F2;
+    line-height: 1.5em;
+    color: #333;

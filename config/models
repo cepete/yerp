@@ -1,0 +1,55 @@
+User
+    ident Text
+    password Text Maybe
+    UniqueUser ident
+    deriving Typeable
+Email
+    email Text
+    user UserId Maybe
+    verkey Text Maybe
+    UniqueEmail email
+
+Currency sql=res_currency
+         name Text
+         create_uid Int Maybe
+         create_date UTCTime Maybe default = getCurrentTime
+         write_date UTCTime Maybe default = getCurrentTime
+         write_uid Int Maybe
+         rounding Double Maybe
+         symbol Text Maybe
+         company_id Int Maybe
+         date UTCTime Maybe default = getCurrentTime
+         base Bool Maybe
+         active Bool
+         position Text
+         accuracy Int 
+         deriving Show
+
+Company sql=res_company
+	name Text 
+  	parent_id Int default=0
+  	partner_id Int default=0
+  	currency_id CurrencyId Maybe default=0
+  	create_uid Int default=0
+  	create_date UTCTime default = getCurrentTime
+  	write_date UTCTime default = getCurrentTime
+  	write_uid Int default=0
+  	rml_footer Textarea Maybe
+  	rml_header Textarea
+  	paper_format Text
+  	logo_web Text Maybe
+  	rml_header2 Textarea
+  	rml_header3 Textarea 
+  	rml_header1 Textarea
+  	account_no Text Maybe	
+  	company_registry Text Maybe
+  	custom_footer Bool Maybe
+  	expects_chart_of_accounts Bool
+  	paypal_account Text Maybe
+  	overdue_msg Text
+  	tax_calculation_rounding_method Text 
+  	schedule_range Double
+  	expense_currency_exchange_account_id Int default=0
+ 	income_currency_exchange_account_id Int default=0
+  	security_lead Double
+        deriving Show

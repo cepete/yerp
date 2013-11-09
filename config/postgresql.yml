@@ -1,0 +1,24 @@
+Default: &defaults
+  user: dwbatchsa
+  password: as1m0v1
+  host: localhost
+  port: 5432
+  database: deverp
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: yerp_test
+  <<: *defaults
+
+Staging:
+  database: yerp_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: yerp_production
+  poolsize: 100
+  <<: *defaults
