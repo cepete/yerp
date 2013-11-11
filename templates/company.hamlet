@@ -1,9 +1,4 @@
 <div id="page"> 
-    <header>
-        <nav>		
-            <li><a href="" class="det">Details
-            <li><a href="" class="Hed">Header/Footer
-
 <div id="content">
     <article>
         <h2> #{companyName company}

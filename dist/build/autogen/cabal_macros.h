@@ -98,8 +98,8 @@
   (major1) == 1 && (major2) <  2 || \
   (major1) == 1 && (major2) == 2 && (minor) <= 1)
 
-/* package persistent-template-1.2.0.4 */
-#define VERSION_persistent_template "1.2.0.4"
+/* package persistent-template-1.2.0.3 */
+#define VERSION_persistent_template "1.2.0.3"
 #define MIN_VERSION_persistent_template(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  2 || \
@@ -112,15 +112,15 @@
   (major1) == 1 && (major2) <  0 || \
   (major1) == 1 && (major2) == 0 && (minor) <= 6)
 
-/* package shakespeare-js-1.2.0.2 */
-#define VERSION_shakespeare_js "1.2.0.2"
+/* package shakespeare-js-1.2.0.1 */
+#define VERSION_shakespeare_js "1.2.0.1"
 #define MIN_VERSION_shakespeare_js(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  2 || \
   (major1) == 1 && (major2) == 2 && (minor) <= 0)
 
-/* package shakespeare-text-1.0.0.8 */
-#define VERSION_shakespeare_text "1.0.0.8"
+/* package shakespeare-text-1.0.0.7 */
+#define VERSION_shakespeare_text "1.0.0.7"
 #define MIN_VERSION_shakespeare_text(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  0 || \

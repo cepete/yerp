@@ -1,0 +1,11 @@
+<div id="page"> 
+    <header>
+        <nav>		
+            <li><a href="" class="det">Details
+            <li><a href="" class="Hed">Header/Footer
+
+<div id="content">
+    <form method=post enctype=#{enctype}>
+          ^{companyCreateWidget}
+          <div>
+              <input type=submit value="Post New Company">

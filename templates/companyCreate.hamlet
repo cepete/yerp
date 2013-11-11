@@ -1,11 +1,5 @@
-<div id="page"> 
-    <header>
-        <nav>		
-            <li><a href="" class="det">Details
-            <li><a href="" class="Hed">Header/Footer
-
-<hr>
-        <form method=post enctype=#{enctype}>
-              ^{companyCreateWidget}
-              <div>
-                <input type=submit value="Post New Company">
+<div id="idTab1">
+     <form method=post enctype=#{enctype}>
+           ^{companyCreateWidget}
+           <div>
+                   <input type=submit value="Post New Company">
